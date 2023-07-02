@@ -15,7 +15,7 @@
 
 ## Create terraform file 
 1. Create 'main.tf' file for writing the code and 'variable.tf' for storing the security details like access key and secret key
-2. Using terraform, we are going to create ECR, Codepipeline and codebuild.
+2. Using terraform, we are going to create ECR, Codepipeline,s3 bucket and codebuild.
 3. After that run, 'terraform init' to initialize the process, 'terraform validate' to validate the code and finally 'terraform apply' for applying the changes.
 4. Once the Amazon Elastic Container Registry (ECR) is created, push the image into the repository by running the .sh file which is given
 6. After that, once the codepipeline is build it will start to work automatically and any changes in the git repo it will execute after that without doing manually.
