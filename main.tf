@@ -10,16 +10,7 @@ resource "aws_ecr_repository" "my_repository" {
   name = "my-docker-repo"  # Replace with your desired repository name
 }
 
-# resource "null_resource" "docker_build" {
-#   provisioner "local-exec" {
-#     command = <<-EOT
-#      aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 588933971286.dkr.ecr.us-east-1.amazonaws.com
-#      docker build -t testcases:latest .
-#      docker tag testcases:latest 588933971286.dkr.ecr.us-east-1.amazonaws.com/my-docker-repo
-#      docker push 588933971286.dkr.ecr.us-east-1.amazonaws.com/my-docker-repo
-#     EOT
-#   }
-# }
+
 
 
 resource "aws_s3_bucket" "example" {
